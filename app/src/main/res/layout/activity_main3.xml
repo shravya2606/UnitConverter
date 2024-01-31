@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="@drawable/backgroundimage1"
+    >
+    <LinearLayout
+        android:id="@+id/Linear01"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/text02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:inputType="numberDecimal"
+
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="18dp"
+            android:backgroundTint="#A9B5F6"
+            android:gravity="center"
+            android:hint="Enter your weight in kilos"
+            android:textColor="#3F51B5"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.201" />
+
+        <Button
+            android:id="@+id/button02"
+            android:layout_width="278dp"
+            android:layout_height="48dp"
+
+            android:layout_gravity="center"
+            android:layout_marginStart="101dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="101dp"
+            android:text="Convert kilos to lbs"
+            android:textSize="18sp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="199dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="165dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="166dp"
+            android:text="0"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="50sp" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animation_view2"
+            android:layout_width="394dp"
+            android:layout_height="266dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:visibility="visible"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="weight.json"
+            app:lottie_loop="true"
+            app:lottie_speed="1" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>
